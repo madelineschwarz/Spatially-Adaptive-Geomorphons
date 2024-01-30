@@ -42,7 +42,13 @@ original code: https://github.com/mariadek/Evaluation-of-a-Spatially-Adaptive-Ap
 ## General Notes
 - Use <5m-resolution DEM
 - conda env gdal configuration does not work well
-- Code is compatible with .tif -- ESRI BIL files are not compatible
+- geomorphons_modified is compatible with .tif -- ESRI BIL files are not compatible
+- morphometric_parameters.c is compatible with .asc files -- running into Segmentation Fault error
+    Convert .tif to .asc with gdal:
+  ```
+  gdal_translate -of AAIGrid input.tif output.asc
+  
+  ```
   
 
 
